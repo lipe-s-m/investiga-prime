@@ -1,6 +1,5 @@
 <div class="card-item" (click)="openModal()">
   <img src="https://cdn-icons-png.freepik.com/512/1150/1150652.png" alt="">
   <h2>{{title}}</h2>
-  <!-- <p>{{question}}</p> -->
 </div>
-<app-modal *ngIf="isOpen"></app-modal>
+<app-modal [modalTitle]="problem" [modalBody]="solution" *ngIf="isOpen"></app-modal>

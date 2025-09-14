@@ -18,4 +18,7 @@ export class Modal {
   closeModal() {
     this.modalService.close();
   }
+  saibaMais() {
+    alert('Funcionalidade em desenvolvimento');
+  }
 }

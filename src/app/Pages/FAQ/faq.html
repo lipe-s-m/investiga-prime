@@ -9,12 +9,7 @@
   </div>
 
   <section class="cards">
-    <app-card title="Varejo com Prime cancelado" question="Você pode entrar em contato com nosso suporte através do e-mail investiga-prime@gmail.com ou pelo telefone (11) 99999-9999." />
-    <app-card title="Cancelamento de simulação de contrato" question="Para alterar sua senha, acesse seu perfil, vá para a seção 'Segurança' e clique em 'Alterar senha'." />
-    <app-card title="Subida de bônus (ADHOC)" question="Você pode entrar em contato com nosso suporte através do e-mail investiga-prime@gmail.com ou pelo telefone (11) 99999-9999." />
-    <app-card title="Diferença entre distrato e estorno de contrato" question="Para alterar sua senha, acesse seu perfil, vá para a seção 'Segurança' e clique em 'Alterar senha'." />
-    <app-card title="Saldo de pontos para resgate" question="Você pode entrar em contato com nosso suporte através do e-mail investiga-prime@gmail.com ou pelo telefone (11) 99999-9999." />
-    <app-card title="Aba Prime não aparece para o varejo" question="Para alterar sua senha, acesse seu perfil, vá para a seção 'Segurança' e clique em 'Alterar senha'." />
+    <app-card *ngFor="let q of questions" [title]="q.title" [problem]="q.problem" [solution]="q.solution"></app-card>
   </section>
   <div class="sub-header"><span></span></div>
 </div>

@@ -22,10 +22,14 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   .cards {
     display: grid;
     grid-template-columns: repeat(2, minmax(15rem, 1fr));
+    max-width: 42rem;
     grid-auto-rows: 14.6rem;
     gap: 0.8rem;
 

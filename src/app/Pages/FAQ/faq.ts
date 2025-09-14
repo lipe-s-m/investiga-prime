@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Card } from './Components/card/card';
 import { CommonModule } from '@angular/common';
+import { questions } from '../../data/questions.mock';
 
 @Component({
   selector: 'app-faq',
@@ -9,4 +10,6 @@ import { CommonModule } from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [Card, CommonModule],
 })
-export default class FaqComponent {}
+export default class FaqComponent {
+  questions = questions;
+}

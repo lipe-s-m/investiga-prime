@@ -12,7 +12,8 @@ import { Modal } from '../../../../shared/modal/modal';
 })
 export class Card implements OnInit, OnDestroy {
   @Input() title: string = 'Título não definido';
-  @Input() question: string = 'Pergunta não definida';
+  @Input() problem: string = 'Problema não definido';
+  @Input() solution: string = 'Solução não definida';
 
   isOpen: boolean = false;
   private sub: Subscription | null = null;
