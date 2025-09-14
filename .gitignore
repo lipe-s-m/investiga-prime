@@ -11,6 +11,11 @@
 npm-debug.log
 yarn-error.log
 
+
+.gemini/
+.github/
+.windsurf/
+.cursor/
 # IDEs and editors
 .idea/
 .project

@@ -1,0 +1,68 @@
+.card-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  border-radius: 1.6rem;
+  border: 0.2rem solid #ccc;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  img {
+    height: 3.6rem;
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  transition: border-color 0.4s;
+
+  &::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 1.6rem;
+    background-color: #af1ecc;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+  }
+  &:hover {
+    border-color: #6f0088;
+    outline: none;
+    background-color: #672175;
+
+    h2,
+    img {
+      transform: scale(1.1);
+      filter: brightness(1.1);
+      color: #fff;
+      transition: 0.4s;
+    }
+
+    &::before {
+      animation: desloca 0.3s;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@keyframes desloca {
+  0% {
+    top: 100%;
+    left: -100%;
+  }
+  50% {
+    top: -5%;
+    left: 5%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}

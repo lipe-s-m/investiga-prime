@@ -1,0 +1,16 @@
+<div class="background" (click)="closeModal()">
+
+  <div class="modal" (click)="$event.stopPropagation()">
+    <div class="header">
+      <h2>{{modalTitle}}</h2>
+    </div>
+    <div class="content">
+      <p>{{modalBody}}</p>
+    </div>
+
+    <div class="buttons">
+      <app-button buttonText="FECHAR" buttonSize="small" [buttonDisabled]="false" buttonLevel="secondary" buttonTheme="light" buttonType="button" (click)="closeModal()"></app-button>
+      <app-button buttonText="SAIBA MAIS" buttonSize="small" [buttonDisabled]="false" buttonLevel="primary" buttonTheme="dark" buttonType="button"></app-button>
+    </div>
+  </div>
+</div>

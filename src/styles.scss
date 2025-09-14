@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  font-size: 62.5%;
+  background: radial-gradient(circle, rgba(194, 179, 234, 1) 100%, rgba(158, 135, 204, 1) 0%);
+  min-height: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Global footprint background behind app content */
+
+/* Ensure app content renders above the pseudo background */
+app-root > * {
+  position: relative;
+  z-index: 1;
+}
+
+* {
+  font-family: 'Segoe UI Historic', 'Segoe UI', Helvetica, Arial, sans-serif;
+  // font-family: 'Poppins', sans-serif;
+  // font-family: 'Nunito', sans-serif;
+  // font-family: variables.$fonte-principal, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
