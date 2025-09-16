@@ -115,7 +115,11 @@
 @media (min-width: 768px) {
   .faq-container {
     max-width: 1600px;
-
+    .input-container {
+      margin-bottom: 3rem;
+      width: 70%;
+      max-width: 75rem;
+    }
     .cards {
       width: 80%;
       max-width: 75rem;

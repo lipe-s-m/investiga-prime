@@ -46,4 +46,11 @@ export const questions: Question[] = [
     solution:
       'Preciso que vocês verifiquem esses varejos que não estão subindo adhocs. Na maioria dos casos os varejos estão como NF separada dentro do SF, em Local Classification. Se ali dentro estiver NF separada, mesmo que na planilha do IC esteja NAO AUTORIZADO a adhoc não vai subir. Mari, mais varejo esta recendo cis de parceria (erro do sistema que deixou) ADHOC se tiver cadastrado no SF ou no IC nota fiscal separado não vai subir OK. Varejo que recebe por promotion a mesma coisa. Não vai subir, preciso que vocês verifiquem esses casos. Enviou ADOCH, eu coloquei feito, no dia seguinte vocês verificaram que não subiu. Já olha pra ver se varejo não esta como NF Separada e Promotion.',
   },
+  {
+    title: 'Divergência de Bonificação no REP x Monitoramento',
+    problem:
+      'A bonificação que reflete no monitoramento é calculada em Rothmans Blue, esse é o core do programa.',
+    solution:
+      'Quando o vendedor ou o varejista entra na plataforma ele enxerga a quantidade de bonificações já convertida de acordo com o SKU escolhido. Dessa forma, se a escolha for Dunhill Red ele receberá um número menor de pacotes. \nCaso a escolha seja de Rothmans Global, o número de pacotes bonificado será maior. \nEssa diferença pode variar de acordo com a proporção do preço por pacote de cada UF. \n\nPor exemplo se o varejo faixa 3 tem que receber 12 pacotes de Rothmans Blue (R$ 90,00) então, de acordo com o SKU dele, ele receberia os 2 pacotes do atingimento 100% + 7 Dunhill (R$ 130,00) ou 12 Rothmans Global (R$ 75,00)',
+  },
 ];
