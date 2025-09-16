@@ -15,10 +15,10 @@ export const questions: Question[] = [
       'Somente a pessoa que criou a simulação pode cancelá-la. Para isso, ela deve acessar o gestor de contratos, clicar em "Simulações pendentes", selecionar a simulação e clicar no ícone de lixeira. Se a pessoa que criou a simulação não estiver disponível, o cancelamento só pode ser feito via chamado.',
   },
   {
-    title: 'Subida de bônus (ADHOC)',
-    problem: 'Dúvida sobre o prazo para a subida de bônus e quando eles aparecem no sistema.',
+    title: 'Subida de bonificação (ADHOC)',
+    problem: 'Dúvida sobre o prazo para a subida de bonificações e quando elas são processadas.',
     solution:
-      'Para que as bonificações subam e sejam processadas, é preciso enviá-las para o time da Ipremios até as 15h em ponto. A bonificação só será refletida no MTM de CIS no dia seguinte. Se o envio for feito após as 15h, é preciso aguardar a próxima rodada do dia seguinte para que o bônus reflita no sistema no dia posterior a essa rodada.',
+      'Para que as bonificações subam e sejam processadas, é preciso enviá-las para a Mari até as 14:30h. A bonificação só será refletida no MTM de CIS no dia seguinte. Se o envio for feito após as 15h, é preciso aguardar a próxima rodada do dia seguinte para que o bônus reflita no sistema no dia posterior a essa rodada.',
   },
   {
     title: 'Diferença entre distrato e estorno de contrato',
@@ -38,5 +38,12 @@ export const questions: Question[] = [
     problem: 'A aba para participar do programa Prime não está visível para um varejo.',
     solution:
       "Verifique a atividade do varejo no Salesforce (SF). Varejos com as seguintes classificações não são elegíveis para o programa Prime: 'ATACADO KA', 'ATACADO REGIONAL', 'HIPERMERCADO', 'LOJA CNV KA', 'LOJA DE VIZINHANCA KA', 'PDV DE FUMO DESFIADO', 'REVENDEDOR' e 'SUPERMERCADO'. Por isso, a aba não aparece para eles.",
+  },
+  {
+    title: 'ADHOC não esta subindo',
+    problem:
+      'ADHOC não esta subindo / não esta aparecendo (Varejo pode ser NF separada / PROMOTIO).',
+    solution:
+      'Preciso que vocês verifiquem esses varejos que não estão subindo adhocs. Na maioria dos casos os varejos estão como NF separada dentro do SF, em Local Classification. Se ali dentro estiver NF separada, mesmo que na planilha do IC esteja NAO AUTORIZADO a adhoc não vai subir. Mari, mais varejo esta recendo cis de parceria (erro do sistema que deixou) ADHOC se tiver cadastrado no SF ou no IC nota fiscal separado não vai subir OK. Varejo que recebe por promotion a mesma coisa. Não vai subir, preciso que vocês verifiquem esses casos. Enviou ADOCH, eu coloquei feito, no dia seguinte vocês verificaram que não subiu. Já olha pra ver se varejo não esta como NF Separada e Promotion.',
   },
 ];

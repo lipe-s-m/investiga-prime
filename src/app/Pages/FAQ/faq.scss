@@ -26,13 +26,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* Centraliza o último item se ele for ímpar */
+
   .cards {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(2, minmax(15rem, 1fr));
     max-width: 42rem;
     grid-auto-rows: 14.6rem;
     gap: 0.8rem;
-
+    & > :nth-last-child(1):nth-child(odd) {
+      grid-column: 1 / -1;
+      width: 50%;
+      margin: 0 auto;
+    }
     &:hover {
       cursor: url('/assets/lupa.svg'), auto;
     }
