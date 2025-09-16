@@ -5,6 +5,10 @@
   flex-direction: column;
   min-height: 100dvh;
   background-color: rgb(52, 9, 77);
+  .logo-prime {
+    transition: opacity 1s ease-out;
+    animation: zoom-in 2.4s forwards, gangorra 2s linear infinite alternate;
+  }
 
   .content {
     display: flex;
@@ -119,6 +123,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes gangorra {
+  from {
+    transform: rotate(-3deg);
+  }
+  to {
+    transform: rotate(4deg);
   }
 }
 .custom-shape-divider-top-1757983567 {

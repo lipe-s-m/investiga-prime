@@ -33,7 +33,6 @@ export class Card implements OnInit, OnDestroy {
   openModal() {
     this.isOpen = true;
   }
-
   closeModal() {
     this.isOpen = false;
   }
