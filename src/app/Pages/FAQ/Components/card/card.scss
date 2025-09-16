@@ -52,8 +52,19 @@
     }
   }
 }
-app-modal {
-  transition: 29s;
+
+@media (min-width: 768px) {
+  .card-item {
+    padding: 3rem 2rem;
+
+    img {
+      height: 4.8rem;
+    }
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
 }
 
 @keyframes desloca {
