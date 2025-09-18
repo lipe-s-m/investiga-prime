@@ -3,13 +3,12 @@
 </header>
 <div class="faq-container">
 
-  <div class="input-container">
-    <input type="text" name="search" placeholder="Buscar Caso..." id="">
-
-  </div>
+  <form class="input-container" (submit)="onSubmitForm()">
+    <input type="text" name="search" placeholder="Buscar Caso..." [ngModel]="inputText" (ngModelChange)="onInputChange($event)" />
+  </form>
 
   <section class="cards">
-    <app-card *ngFor="let q of questions" [title]="q.title" [problem]="q.problem" [solution]="q.solution"></app-card>
+    <app-card *ngFor="let q of listQuestions" [title]="q.title" [problem]="q.problem" [solution]="q.solution"></app-card>
   </section>
   <div class="sub-header"><span></span></div>
 </div>
