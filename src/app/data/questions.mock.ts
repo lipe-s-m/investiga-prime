@@ -7,12 +7,27 @@ export const questions: Question[] = [
       'Um varejo teve seu programa Prime cancelado, mas a equipe regional, o time do Prime e o 0800 não solicitaram o cancelamento.',
     solution:
       'O cancelamento ocorre automaticamente se o status do varejo no sistema Salesforce (SF) for alterado de "Ativo" para qualquer outro. \n\nNesse caso, o varejo foi desativado temporariamente. Assim que a regularização foi feita, ele pôde assinar o programa novamente.',
+    readMore: `A regional nao solicitou, o time do Prime também nao cancelou, nao foi cancelado pelo 0800
+    Então quem cometeu esse "CRIME"? Mais um caso para o <bold>Projeto I.C.P</bold>
+    \nSegue a dica da <bold> Investigadora Mari Carvalho: </bold>
+    \nsempre que aparecer Prime cancelado que vc ja souber que nao foi ninguém da regional que solicitou.
+    \nJa olha no SF como esta o histórico. Ali vc ja mata a charada.\n<bold>Se o varejo fica com status diferente no SF de “Ativo”, ele é cancelado do Prime.</bold>\n\n<bold>Esse varejo, foi desativado temporariamente. Ou seja, o status dele mudou. Por isso foi cancelado do Prime.</bold>
+    <bold>Quando o varejo fez a regularização dele, ja voltou para ele assinar o programa novamente.</bold>`,
+
+    images: ['https://i.ibb.co/kgdVnmM7/image006.jpg'],
   },
   {
     title: 'Cancelamento de simulação de contrato',
     problem: 'É necessário cancelar uma simulação de contrato que ainda não foi aprovada.',
     solution:
       'Somente a pessoa que criou a simulação pode cancelá-la. Para isso, ela deve acessar o gestor de contratos, clicar em "Simulações pendentes", selecionar a simulação e clicar no ícone de lixeira. \n\nSe a pessoa que criou a simulação não estiver disponível, o cancelamento só pode ser feito via chamado.',
+    readMore: `<bold>Enquanto a simulação nao for aprovada por todos, NÃO É CONTRATO.\n
+    É SIMULAÇÃO.\n
+    Só vira contrato, depois que for totalmente aprovada e varejo der o aceite.</bold>
+    \n\nE se por um a caso, quem criou a simulação desistir de dar seguimento a criação desse contrato., e ele nao for finalizado pelos aprovadores, <bold>só o CRIADOR é que pode cancelar dentro do sistema.</bold>\n\n<bold>Segue como fazer:</bold>\n\n
+    Ele irá acessar o gestor de contratos, <bold>clicar em Simulações pendentes, selecionar a simulação que deseja cancelar e clicar no ícone de lixeira no final da página. Pronto, simulação cancelada.</bold>`,
+
+    images: ['https://i.ibb.co/JYjnJJq/image.png'],
   },
   {
     title: 'Subida de bonificação (ADHOC)',

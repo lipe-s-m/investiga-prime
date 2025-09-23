@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div class="tutorial-container">
+
+
+    <section class="steps">
+      <article>
+        <h2>{{title}}</h2>
+        <p id="readMoreText">{{readMoreText}}</p>
+        <div class="image-container">
+
+          <img [src]="images" alt="imagem">
+        </div>
+      </article>
+
+    </section>
+
+    <footer>
+      <app-button buttonText="Voltar" buttonLevel="primary" buttonTheme="dark" (buttonClick)="goBack()"></app-button>
+    </footer>
+  </div>
+</div>

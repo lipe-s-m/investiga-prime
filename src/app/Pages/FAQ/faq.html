@@ -8,7 +8,7 @@
   </form>
 
   <section class="cards">
-    <app-card *ngFor="let q of listQuestions" [title]="q.title" [problem]="q.problem" [solution]="q.solution"></app-card>
+    <app-card *ngFor="let q of listQuestions" [fullQuestion]="q" [title]="q.title" [problem]="q.problem" [readMore]="q.readMore ? q.readMore : ''" [solution]="q.solution"></app-card>
   </section>
   <div class="sub-header"><span></span></div>
 </div>

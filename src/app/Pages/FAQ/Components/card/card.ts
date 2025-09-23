@@ -14,6 +14,8 @@ export class Card implements OnInit, OnDestroy {
   @Input() title: string = 'Título não definido';
   @Input() problem: string = 'Problema não definido';
   @Input() solution: string = 'Solução não definida';
+  @Input() readMore: string = 'Não implementado...';
+  @Input() fullQuestion: any;
 
   isOpen: boolean = false;
   private sub: Subscription | null = null;

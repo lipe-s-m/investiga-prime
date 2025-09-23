@@ -39,7 +39,6 @@ export default class FaqComponent {
   }
 
   filter() {
-    let inputIndex = this.inputText.length;
     this.listQuestions = questions.filter((q) => {
       if (
         this.removerAcentos(q.title.toLowerCase()).includes(

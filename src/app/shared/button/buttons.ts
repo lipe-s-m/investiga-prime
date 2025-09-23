@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -17,4 +17,5 @@ export class ButtonComponent {
   @Input() buttonDisabled: boolean = false;
   @Input() buttonBackgroundColor?: string;
   @Input() buttonTextColor?: string;
+  @Output() buttonClick = new EventEmitter<Event>();
 }

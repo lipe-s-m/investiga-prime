@@ -113,8 +113,6 @@
 }
 @media (min-width: 555px) {
   .faq-container {
-    .input-container {
-    }
     .cards {
       width: 90%;
       max-width: 60rem;
@@ -160,7 +158,6 @@
     }
   }
 }
-//outros
 :host::before {
   content: '';
   position: fixed;
@@ -168,15 +165,13 @@
   pointer-events: none;
   background-image: url('/assets/footprint.svg');
   background-repeat: repeat;
-  background-size: 120px 120px; /* adjust size of each footprint */
-  opacity: 0.08; /* subtle */
-  transform: rotate(-2deg); /* diagonal */
+  background-size: 120px 120px;
+  opacity: 0.08;
+  transform: rotate(-2deg);
   transform-origin: center;
-  z-index: 0; /* behind page content */
+  z-index: 0;
 }
 
-/* Create stacking context so the pseudo-element at z-index:0 sits behind content
-   without needing to set z-index on every child. Promote main sections to z-index:1 */
 :host {
   position: relative;
   z-index: 0;
