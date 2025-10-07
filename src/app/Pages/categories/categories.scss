@@ -1,0 +1,126 @@
+.container {
+  padding: 1rem;
+  text-align: center;
+  min-height: 100dvh;
+  background-color: rgb(52, 9, 77);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 29rem;
+    width: 95%;
+    z-index: 3;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 1.6rem;
+    // background: rgb(167, 159, 241);
+    h1 {
+      color: #ffffff;
+      margin-bottom: 1rem;
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2.4rem;
+      z-index: 3;
+      width: 95%;
+      max-width: 42rem;
+      margin-top: 2rem;
+    }
+
+    .cat {
+      padding: 2rem 1rem;
+      border-radius: 8px;
+      border: 1px solid rgba(148, 63, 148, 0.12);
+      background: rgba(255, 255, 255, 0.87);
+      color: #ce50e7;
+      font-weight: 700;
+      font-size: 1.6rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      &:hover {
+        background: #ce50e7;
+        color: #fff;
+        transform: translateY(-4px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+@media (min-width: 580px) {
+  .container {
+    .content {
+      min-width: 29rem;
+      width: 95%;
+      margin-top: 2rem;
+      padding: 2rem;
+      h1 {
+        color: #f5edf7;
+        margin-bottom: 1rem;
+        font-size: 3.2rem;
+        font-weight: 700;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 10rem;
+        gap: 2.4rem;
+        z-index: 3;
+        width: 92%;
+        max-width: 480rem;
+        margin-top: 2rem;
+      }
+      .cat {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+  .container {
+    .content {
+      min-width: 29rem;
+      width: 95%;
+      margin-top: 2rem;
+      padding: 2rem;
+      h1 {
+        color: #f5edf7;
+        margin-bottom: 1rem;
+        font-size: 3.2rem;
+        font-weight: 700;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10rem;
+        gap: 2.4rem;
+        z-index: 3;
+        width: 95%;
+        max-width: 480rem;
+        margin-top: 2rem;
+      }
+      .cat {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
+.content {
+  width: 12650px;
+  .cards {
+    width: 80%;
+    max-width: 75rem;
+    gap: 3rem;
+    grid-auto-rows: 18rem;
+  }
+}

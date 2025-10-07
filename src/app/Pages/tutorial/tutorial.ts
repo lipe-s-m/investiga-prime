@@ -33,6 +33,6 @@ export class Tutorial implements OnInit, OnDestroy {
   }
 
   goBack() {
-    this.router.navigate(['/faq']);
+    this.router.navigate(['/categories']);
   }
 }

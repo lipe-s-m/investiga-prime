@@ -3,6 +3,7 @@ import { Question } from '../interfaces/question';
 export const questions: Question[] = [
   {
     title: 'Varejo com Prime cancelado',
+    category: 'Prime',
     problem:
       'Um varejo teve seu programa Prime cancelado, mas a equipe regional, o time do Prime e o 0800 não solicitaram o cancelamento.',
     solution:
@@ -18,6 +19,7 @@ export const questions: Question[] = [
   },
   {
     title: 'Cancelamento de simulação de contrato',
+    category: 'Conecta Negócios',
     problem: 'É necessário cancelar uma simulação de contrato que ainda não foi aprovada.',
     solution:
       'Somente a pessoa que criou a simulação pode cancelá-la. Para isso, ela deve acessar o gestor de contratos, clicar em "Simulações pendentes", selecionar a simulação e clicar no ícone de lixeira. \n\nSe a pessoa que criou a simulação não estiver disponível, o cancelamento só pode ser feito via chamado.',
@@ -31,12 +33,14 @@ export const questions: Question[] = [
   },
   {
     title: 'Subida de bonificação (ADHOC)',
+    category: 'Prime',
     problem: 'Dúvida sobre o prazo para a subida de bonificações e quando elas são processadas.',
     solution:
       'Para que as bonificações subam e sejam processadas, é preciso enviá-las para a Mari até as 14:30h. A bonificação só será refletida no MTM de CIS no dia seguinte. \n\nSe o envio for feito após as 15h, é preciso aguardar a próxima rodada do dia seguinte para que o bônus reflita no sistema no dia posterior a essa rodada.',
   },
   {
     title: 'Diferença entre distrato e estorno de contrato',
+    category: 'Conecta Negócios',
     problem:
       'Necessidade de entender a diferença entre distrato e estorno de contrato antes de solicitar.',
     solution:
@@ -44,18 +48,24 @@ export const questions: Question[] = [
   },
   {
     title: 'Saldo de pontos para resgate',
+    category: 'Conecta Negócios',
+
     problem: 'Varejo reclama que ainda tem pontos, mas não consegue acessá-los para resgate.',
     solution:
       'O sistema cancela automaticamente o resgate de pontos para os varejos que não possuem saldo suficiente. Se o varejo tiver pontos suficientes para resgate, o saldo permanece disponível por 60 dias. \n\nCaso contrário, o sistema já calcula que não há pontuação suficiente para resgate e cancela a operação, para que o saldo não fique ativo no sistema por 2 meses sem ter a quantidade de pontos necessária.',
   },
   {
     title: 'Aba Prime não aparece para o varejo',
+    category: 'Prime',
+
     problem: 'A aba para participar do programa Prime não está visível para um varejo.',
     solution:
       "Verifique a atividade do varejo no Salesforce (SF). Varejos com as seguintes classificações não são elegíveis para o programa Prime: 'ATACADO KA', 'ATACADO REGIONAL', 'HIPERMERCADO', 'LOJA CNV KA', 'LOJA DE VIZINHANCA KA', 'PDV DE FUMO DESFIADO', 'REVENDEDOR' e 'SUPERMERCADO'. Por isso, a aba não aparece para eles.",
   },
   {
     title: 'ADHOC não esta subindo',
+    category: 'Prime',
+
     problem:
       'ADHOC não esta subindo / não esta aparecendo (Varejo pode ser NF separada / PROMOTIO).',
     solution:
@@ -63,6 +73,8 @@ export const questions: Question[] = [
   },
   {
     title: 'Divergência de Bonificação no REP x Monitoramento',
+    category: 'Rede',
+
     problem:
       'A bonificação que reflete no monitoramento é calculada em Rothmans Blue, esse é o core do programa.',
     solution:
